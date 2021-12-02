@@ -55,6 +55,8 @@ function setDifficulty() {
 }
 
 function restart() {
+    document.getElementById("restart").style.display = "block";
+    document.getElementById("xyz").style.display = "block";
     START_TIME = new Date().getTime();
     END_TIME = null;
     randomizePieces();
@@ -78,6 +80,8 @@ function isComplete() {
             return false;
         }
     }
+    document.getElementById("restart").style.display = "none";
+    document.getElementById("xyz").style.display = "none";
     return true;
 }
 

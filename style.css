@@ -59,3 +59,28 @@ select {
   left: 50%;
   transform: translate(-50%);
 }
+#restart {
+  position: absolute;
+  bottom: 90;
+  left: 35%;
+  font-size: 6vmin;
+  background: rgb(123, 146, 196);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 1vmin;
+}
+
+#xyz {
+  position: absolute;
+  bottom: 90;
+  right: 35%;
+  font-size: 6vmin;
+  background: rgb(123, 146, 196);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 1vmin;
+}
