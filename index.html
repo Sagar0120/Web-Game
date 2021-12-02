@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Puzzle Cam</title>
+        <script src="script.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+
+    <body onload="main()">
+        <canvas id="myCanvas"></canvas>
+        <div id="menuItems" class="menu">
+            <div id="menu">
+                <div id="controls">
+                    <p>Puzzle Cam</p><i class='bx bxs-camera' ></i>
+                    <br>
+                    <br>
+                    Difficulty <select id="difficulty" onchange='setDifficulty()'>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                        <option value="insane">Insane</option>
+                </select>
+                <br>
+                <br>
+                <button onclick="restart()">Start</button>
+                </div>
+            </div>
+        </div>
+        <div id = "endScreen" class="menu" style="display: none">
+            <p>Puzzle Cam</p><i class='bx bxs-camera' ></i>
+            <br>
+            <br>
+            <div id="scoreValue"></div>
+            <input type="text" id = "name" placeholder="Your name"></input>
+            <button onclick="saveScore()" id = "saveBtn">Save</button>
+            <br>
+            <br>
+            <button onclick="showScores()">Show Scores</button>
+            <button onclick="showMenu()">Menu</button>
+        </div>
+        <div id = "scoresScreen" class="menu" style="display: none">
+            <p>Puzzle Cam</p><i class='bx bxs-camera' ></i>
+            <br>
+            <br>
+            <div id = "scoresContainer"></div>
+            <br>
+            <button onclick="closeScores()">Back</button>
+        </div>
+
+        <div id='time'></div>
+    </body>
+</html>

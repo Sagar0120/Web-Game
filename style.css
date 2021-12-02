@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plaster&display=swap");
+
+body {
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  font-family: "Goblin One", cursive;
+}
+.menu {
+  width: 80vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 5vmin;
+  border: 1vmin rgba(0, 0, 0, 0.6) solid;
+  font-size: 6vmin;
+}
+
+.bx {
+  font-size: 10vmin;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 10vmin;
+  padding: auto;
+  font-family: "Plaster", cursive;
+}
+
+button {
+  font-size: 7vmin;
+  background: rgb(123, 146, 196);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 1vmin;
+}
+
+button:hover {
+  background: orange;
+  color: black;
+}
+
+select {
+  font-size: 4vmin;
+  cursor: pointer;
+  border-radius: 1vmin;
+  outline: none;
+}
+
+#time {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
