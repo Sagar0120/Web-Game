@@ -18,10 +18,10 @@
                     <br>
                     <br>
                     Difficulty <select id="difficulty" onchange='setDifficulty()'>
-                        <option value="easy">Easy</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
-                        <option value="insane">Insane</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                        <option value="Insane">Insane</option>
                 </select>
                 <br>
                 <br>
@@ -41,6 +41,7 @@
             <button onclick="showScores()">Show Scores</button>
             <button onclick="showMenu()">Menu</button>
         </div>
+
         <div id = "scoresScreen" class="menu" style="display: none">
             <p>Puzzle Cam</p><i class='bx bxs-camera' ></i>
             <br>
@@ -49,12 +50,13 @@
             <br>
             <button onclick="closeScores()">Back</button>
         </div>
-        <div id='time'></div>
+        
         <div id = 'restart' style="display: none">
             <button onclick="restart()">Reset</button>
         </div>
         <div id = 'xyz' style="display: none">
             <button onclick="showMenu()">Menu</button>
         </div>
+        <div id='time'></div>
     </body>
 </html>

@@ -84,3 +84,21 @@ select {
   border: none;
   border-radius: 1vmin;
 }
+
+#scoresContainer {
+  height: 43vh;
+  overflow: auto;
+}
+
+input {
+  font-size: 7vmin;
+  border-radius: 1vmin;
+  width: 50%;
+  text-align: center;
+}
+
+#helperCanvas {
+  margin-top: -210px;
+  width: 28%;
+  margin-left: -63px;
+  }
